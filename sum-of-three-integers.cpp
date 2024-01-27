@@ -3,8 +3,8 @@
 #include<vector>
 using namespace std;
 
-// Time complexity of solution:  O(n) since two traversals are performed, regardless of n
-// Space complexity of solution: O(1) since only new allocations after input are two int pointers and local sum variable, regardless of n
+// Time complexity of solution:  O(n^2) since two nested loops used, which dominates O(nlog(n)) std sort algorithm
+// Space complexity of solution: O(nlog(n)) from std sort algorithm, which dominates constant term
 
 bool IsSumOfThree(std::vector<int> nums, int target)
 {
